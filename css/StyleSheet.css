@@ -1,0 +1,120 @@
+﻿body {
+    background-color:white;
+}
+
+*{
+    padding:0;
+    border:0;
+    margin:0;
+}
+.anasablon .Anasayfa .slider {
+    height:400px;
+    width:960px;
+    background-color:blue;
+    margin:10px;
+    position:relative;
+}
+    .anasablon .Anasayfa .slider .Bakanliklogo {
+        height: 80px;
+        width: 95px;
+        
+         margin-top:110px;
+        background-image: url('../resimler/Ekran%20Alıntısı.PNG');
+        margin-left: 10px;
+        float: left;
+        position: absolute;
+          background-size:cover;
+    top: -5px;
+    left: 2px;
+}
+.anasablon .Anasayfa .slider .defisim {
+    height:40px;
+    width:300px;
+    
+    margin-top:150px;
+    margin-left:10px;
+    float:left;
+    position:absolute;
+    top: -7px;
+    left: 106px;
+    color:white;
+    font-size:22px;
+    font-family:Verdana;
+}
+    .anasablon .Anasayfa .slider .bayrak {
+        height: 90px;
+        position: absolute;
+        background-image: url('../resimler/turk_bayrak.png');
+        width: 90px;
+      
+        float: right;
+        margin-top: 90px;
+        top: -61px;
+        left: 859px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        background-size:cover;
+    }
+.anasablon .Anasayfa .menu {
+    height:40px;
+    width:960px;
+    background-color:blue;
+    margin:10px;
+}
+.anasablon .Anasayfa .basliklar {
+    height:20px;
+    width:960px;
+    background-color:blue;
+    margin:10px;
+    color:white;
+}
+.anasablon .Anasayfa .menu ul{
+    list-style:none;
+}
+    .anasablon .Anasayfa .menu ul li {
+        float: left;
+        padding:5px;
+        font-family: Verdana;
+        font-size: 18px;
+        color:white;
+        height:40px;
+       
+    }
+h1 {
+    font-size:12px;
+    font-family:Verdana;
+    color:blue;
+}
+.anasablon .Anasayfa .duyrular{
+    height:400px;
+    width:200px;
+    background-color:blue;
+    
+    float:left;
+     margin-left:10px;
+}
+.anasablon .Anasayfa .haberler {
+    height:400px;
+    width:540px;
+    background-color:blue;
+    /*margin:10px;*/
+    float:left;
+    margin-left:10px;
+}
+.anasablon .Anasayfa .footer {
+    height:250px;
+    width:960px;
+    background-color:blue;
+    /*margin:10px;*/
+    float:left;
+    margin:10px;
+}
+.anasablon .Anasayfa .ihaleler {
+    height:400px;
+    width:200px;
+    background-color:blue;
+    float:left;
+     margin-left:10px;
+    /*margin:10px;*/
+}

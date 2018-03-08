@@ -1,0 +1,96 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AnaMaster.master.cs" Inherits="AnaMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>BİNGÖL DEFTERDARLIĞI</title>
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 151px;
+            height: 156px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="anasablon" style="width: 1300px; height: 1300px; background-color: blue; margin: auto;">
+            <div class="defFoto" style="height: auto; width: auto; background-color: white; float: left; margin-top: 19px; border: 1px solid #00F;">
+                <h1>Defterdarımız</h1>
+                <img alt="b" class="auto-style1" src="resimler/def.PNG" />
+            </div>
+            <div class="Anasayfa" style="width: 980px; height: 1300px; background-color: white; margin: auto;">
+
+                <div class="ust " style="height: 20px; width: 980px; background-color: blue"></div>
+                <%--<div class="ust " style="height:15px; width:980px; background-color:white"></div>--%>
+
+                <div class="ustmenu " style="height: 30px; width: 960px;  background-color: blue; margin: 10px; font-family:Verdana;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    <a href="#" style="color:white;  height:30px;">ANASAYFA</a>  </div>
+                <%--<div class="ustbosluk " style="height:15px; width:960px; background-color:red ;margin:10px;" ></div>--%>
+                <div class="slider">
+                    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+                    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+
+                        <ContentTemplate>
+
+                            <asp:Timer ID="Timer1" runat="server" Interval="3000" OnTick="Timer1_Tick"></asp:Timer>
+                       <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+
+
+                    <asp:Button ID="Button2" runat="server" Text="ileri" OnClick="Button2_Click" Visible="False" />
+                    <asp:Button ID="Button1" runat="server" Text="geri" OnClick="Button1_Click" Visible="False" />
+
+
+                    <div class="Bakanliklogo">
+                         </div>
+                    <div class="defisim">BİNGÖL DEFTERDARLIĞI</div>
+                    <div class="bayrak">
+                        
+
+                    </div>
+                   <%--  
+                    <asp:Button ID="Button2" runat="server" Text="ileri" OnClick="Button2_Click" Visible="False" />
+                    <asp:Button ID="Button1" runat="server" Text="geri" OnClick="Button1_Click" Visible="False" />
+
+
+                    <asp:Label ID="Label1" runat="server" Text=""></asp:Label>--%>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>HAKIMIZDA </li>
+                        <li>BİRİMLER   </li>
+                        <li>MEVZUAT   </li>
+                        <li>İÇ KONTROL    </li>
+                        <li>İSTATİSTİKLER  </li>
+                        <%--<li>    </li>--%>
+                        <li>FORMLAR  </li>
+                        <li>BİLGİ EDİNME  </li>
+                        <li>İLETİŞİM   </li>
+                    </ul>
+
+
+
+                </div>
+                <div class="basliklar">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DUYRULAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BİZDEN&nbsp; HABERLER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; İHALELER</div>
+                <div class="duyrular"></div>
+                <div class="haberler"></div>
+                <div class="ihaleler"></div>
+                <div class="footer"></div>
+
+
+            </div>
+
+        </div>
+
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+    </form>
+</body>
+</html>
