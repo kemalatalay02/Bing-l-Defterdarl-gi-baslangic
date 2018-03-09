@@ -6,6 +6,9 @@
 <head runat="server">
     <title>BİNGÖL DEFTERDARLIĞI</title>
     <link href="css/StyleSheet.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="JavaScript.js"></script>
+    <link href="css/menu.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <style type="text/css">
@@ -62,12 +65,16 @@
                 </div>
                 <div class="menu">
                     <ul>
-                        <li>HAKIMIZDA </li>
-                        <li>BİRİMLER   </li>
+                        <li>
+                            Hakımızda
+                        </li>
+                        <li> Birimler
+                           
+                        </li>
                         <li>MEVZUAT   </li>
                         <li>İÇ KONTROL    </li>
                         <li>İSTATİSTİKLER  </li>
-                        <%--<li>    </li>--%>
+                        
                         <li>FORMLAR  </li>
                         <li>BİLGİ EDİNME  </li>
                         <li>İLETİŞİM   </li>
