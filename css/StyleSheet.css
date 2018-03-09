@@ -72,10 +72,10 @@
     margin:10px;
     color:white;
 }
-.anasablon .Anasayfa .menu ul{
+/*.anasablon .Anasayfa .menu ul{
     list-style:none;
-}
-    .anasablon .Anasayfa .menu ul li {
+}*/
+    /*.anasablon .Anasayfa .menu ul li {
         float: left;
         padding:5px;
         font-family: Verdana;
@@ -83,12 +83,12 @@
         color:white;
         height:40px;
        
-    }
-h1 {
+    }*/
+/*h1 {
     font-size:12px;
     font-family:Verdana;
     color:blue;
-}
+}*/
 .anasablon .Anasayfa .duyrular{
     height:400px;
     width:200px;
