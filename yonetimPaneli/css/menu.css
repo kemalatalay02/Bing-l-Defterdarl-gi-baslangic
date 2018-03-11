@@ -1,0 +1,374 @@
+﻿body {
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.birimmenu > li {
+    float: left;
+}
+/*altbirim css*/
+li.birimler ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    padding: 2px 20px;
+    display: block;
+    font-size: 15px;
+    font-weight: lighter;
+    width:150px;
+}
+/*//............................................birimler*/
+    li.birimler ul li a:hover {
+        background-color: red;
+    }
+
+.birimmenu > li > a {
+    padding: 10px 10px;
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+
+    .birimmenu > li > a:hover {
+        color: red;
+        font-weight: lighter;
+    }
+
+li.birimler {
+    position: relative;
+    perspective:60px;
+    -webkit-perspective:60px;
+    
+    -moz-perspective:60px;
+}
+
+    li.birimler ul {
+        position: absolute;
+        transition: all 0.2s  ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transform-origin:40% 60%;
+        -webkit-transform-origin:40% 60%;
+      
+      -moz-transform-origin:40% 60%;
+      -o-transform-origin:40% 60%;
+    }
+
+        li.birimler ul.gizli {
+            visibility: hidden;
+            opacity: 0;
+            transform: rotateX(-40deg);
+            -webkit-transform: rotateX(-40deg);
+            -o-transform: rotateX(-40deg);
+            -moz-transform: rotateX(-40deg);
+        }
+
+        li.birimler ul.gorunur {
+            visibility: visible;
+            opacity: 1;
+        }
+         /*...............hakımızda...............................................................*/
+         li.hakimizda ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    padding: 2px 20px;
+    display: block;
+    font-size: 15px;
+    font-weight: lighter;
+    width:150px;
+}
+         li.hakimizda ul li a:hover {
+        background-color: red;
+    }
+         li.hakimizda {
+    position: relative;
+    perspective:60px;
+    -webkit-perspective:60px;
+    
+    -moz-perspective:60px;
+}
+
+    li.hakimizda ul {
+        position: absolute;
+        transition: all 0.2s  ;
+        -webkit-transition: all 0.2s ;
+        -moz-transition: all 0.2s ;
+        -o-transition: all 0.2s ;
+        transform-origin:40% 60%;
+        
+      -webkit-transform-origin :40% 60%;
+      -moz-transform-origin:40% 60%;
+      -o-transform-origin:40% 60%;
+    }
+
+        li.hakimizda ul.hakimizdagizli {
+            visibility: hidden;
+            opacity: 0;
+            transform: rotateX(-40deg);
+            -webkit-transform: rotateX(-40deg);
+            -o-transform: rotateX(-40deg);
+            -moz-transform: rotateX(-40deg);
+        }
+
+        li.hakımizda ul.hakimizdagorunur {
+            visibility: visible;
+            opacity: 1;
+        }
+
+
+
+        /*..................iç kontrol..........................................................*/
+
+
+
+
+         li.kontrol ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    padding: 2px 20px;
+    display: block;
+    font-size: 15px;
+    font-weight: lighter;
+    width:150px;
+}
+         li.kontrol ul li a:hover {
+        background-color: red;
+    }
+         li.kontrol {
+    position: relative;
+    perspective:60px;
+    -webkit-perspective:60px;
+    
+    -moz-perspective:60px;
+}
+
+    li.kontrol ul {
+        position: absolute;
+        transition: all 0.2s  ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transform-origin:40% 60%;
+        
+      -webkit-transform-origin :40% 60%;
+      -moz-transform-origin:40% 60%;
+      -o-transform-origin:40% 60%;
+    }
+
+        li.kontrol ul.kontrolgizli{
+            visibility: hidden;
+            opacity: 0;
+            transform: rotateX(-40deg);
+            -webkit-transform: rotateX(-40deg);
+            -o-transform: rotateX(-40deg);
+            -moz-transform: rotateX(-40deg);
+        }
+
+        li.kontrol ul.kontrolgorunur {
+            visibility: visible;
+            opacity: 1;
+        }
+
+/*....................mevzuat.............................*/
+
+     li.mevzuat ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    padding: 2px 20px;
+    display: block;
+    font-size: 15px;
+    font-weight: lighter;
+    width:150px;
+}
+         li.mevzuat ul li a:hover {
+        background-color: red;
+    }
+         li.mevzuat {
+    position: relative;
+    perspective:60px;
+    -webkit-perspective:60px;
+    
+    -moz-perspective:60px;
+}
+
+    li.mevzuat ul {
+        position: absolute;
+        transition: all 0.2s  ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transform-origin:40% 60%;
+        
+      -webkit-transform-origin :40% 60%;
+      -moz-transform-origin:40% 60%;
+      -o-transform-origin:40% 60%;
+    }
+
+        li.mevzuat ul.mevzuatgizli{
+            visibility: hidden;
+            opacity: 0;
+            transform: rotateX(-40deg);
+            -webkit-transform: rotateX(-40deg);
+            -o-transform: rotateX(-40deg);
+            -moz-transform: rotateX(-40deg);
+        }
+
+        li.mevzuat ul.mevzuatgorunur {
+            visibility: visible;
+            opacity: 1;
+        }
+
+/*.......................istetistikler..................*/
+
+li.istastik ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    padding: 2px 20px;
+    display: block;
+    font-size: 15px;
+    font-weight: lighter;
+    width:150px;
+}
+         li.istastik ul li a:hover {
+        background-color: red;
+    }
+         li.istastik {
+    position: relative;
+    perspective:60px;
+    -webkit-perspective:60px;
+    
+    -moz-perspective:60px;
+}
+
+    li.istastik ul {
+        position: absolute;
+        transition: all 0.2s  ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transform-origin:40% 60%;
+        
+      -webkit-transform-origin :40% 60%;
+      -moz-transform-origin:40% 60%;
+      -o-transform-origin:40% 60%;
+    }
+
+        li.istastik ul.istastikgizli{
+            visibility: hidden;
+            opacity: 0;
+            transform: rotateX(-40deg);
+            -webkit-transform: rotateX(-40deg);
+            -o-transform: rotateX(-40deg);
+            -moz-transform: rotateX(-40deg);
+        }
+
+        li.istastik ul.istastikgorunur {
+            visibility: visible;
+            opacity: 1;
+        }
+/*......................formlar...............*/
+li.formlar ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    padding: 2px 20px;
+    display: block;
+    font-size: 15px;
+    font-weight: lighter;
+    width:150px;
+}
+         li.formlar ul li a:hover {
+        background-color: red;
+    }
+         li.formlar {
+    position: relative;
+    perspective:60px;
+    -webkit-perspective:60px;
+    
+    -moz-perspective:60px;
+}
+
+    li.formlar ul {
+        position: absolute;
+        transition: all 0.2s  ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transform-origin:40% 60%;
+        
+      -webkit-transform-origin :40% 60%;
+      -moz-transform-origin:40% 60%;
+      -o-transform-origin:40% 60%;
+    }
+
+        li.formlar ul.formlargizli{
+            visibility: hidden;
+            opacity: 0;
+            transform: rotateX(-40deg);
+            -webkit-transform: rotateX(-40deg);
+            -o-transform: rotateX(-40deg);
+            -moz-transform: rotateX(-40deg);
+        }
+
+        li.istastik ul.formlargorunur {
+            visibility: visible;
+            opacity: 1;
+        }
+
+
