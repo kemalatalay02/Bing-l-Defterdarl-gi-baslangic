@@ -64,21 +64,93 @@
                     <asp:Label ID="Label1" runat="server" Text=""></asp:Label>--%>
                 </div>
                 <div class="menu">
-                    <ul>
-                        <li>
-                            Hakımızda
-                        </li>
-                        <li> Birimler
-                           
-                        </li>
-                        <li>MEVZUAT   </li>
-                        <li>İÇ KONTROL    </li>
-                        <li>İSTATİSTİKLER  </li>
-                        
-                        <li>FORMLAR  </li>
-                        <li>BİLGİ EDİNME  </li>
-                        <li>İLETİŞİM   </li>
-                    </ul>
+                    <ul class="birimmenu">
+            <li class="hakımizda">
+                <a href="#">HAKIMIZDA</a>
+                <ul class="Hakımizdagizli">
+                    <li><a href="#">Hakımızda</a>    </li>
+                    <li><a href="#">Görev ve Misyonumuz</a>     </li>
+                    <li><a href="#">Defterdarımız</a>   </li>
+                </ul>
+            </li>
+            <li class="birimler">
+                <a href="#">BİRİMLER </a>
+                <ul class="gizli">
+
+                    <li><a href="#">Personel Müdürlüğü</a>    </li>
+                    <li><a href="#">Muhasebe Müdürlüğü</a>     </li>
+                    <li><a href="#">Muhakemet Müdürlüğü</a>   </li>
+
+                    <li><a href="#">Milli Emlak Müdrülüğ</a>  </li>
+                    <li><a href="#">Gelir Müdürlüğü</a>   </li>
+                    <li><a href="#">Vergi Dairesi Müdürlüğü</a> </li>
+                    <li><a href="#">K.D.S.S. Müdürlüğü</a>  </li>
+
+
+                </ul>
+
+            </li>
+            <li class="mevzuat">
+                <a href="#">MEVZUAT </a>
+                <ul class="mevzuatgizli">
+
+                    <li><a href="#">Kanunlar</a>    </li>
+
+                    <li><a href="#">Kanun Hükmünde Karanameler </a></li>
+                    <li><a href="#">Yönetmelikler</a>   </li>
+
+                    <li><a href="#">Vergi MEVZUATI</a>  </li>
+                    <li><a href="#">Bakanlık Yönetmelikleri</a>   </li>
+                    <li><a href="#">Genelgeler</a> </li>
+
+
+
+                </ul>
+
+            </li>
+
+
+            <li class="kontrol">
+                <a href="#">İÇ KONTROL </a>
+                <ul class="Kontrolgizli">
+
+                    <li><a href="#">İc Kontrol Kararlılık Beyanı</a>    </li>
+                    <li><a href="#">Fonsiyonel Teşkilat Şemaları </a></li>
+                    <li><a href="#">Birim Yönergesi</a>   </li>
+
+                    <li><a href="#">Görev  Dağılımları</a>  </li>
+                    <li><a href="#">İşlem Süreçleri</a>   </li>
+                    <li><a href="#">İşlem Yönergeleri</a> </li>
+                    <li><a href="#">Hizmet Standartları</a>  </li>
+                    <li><a href="#">Etik</a> </li>
+                    <li><a href="#">Şikayet Bidirim Yöntemleri</a>  </li>
+
+
+                </ul>
+
+            </li>
+
+            <li class="istastik">
+                <a href="#">İSTATİSTİKLER </a>
+                <ul class="istastikgizli">
+
+                    <li><a href="#">Milli Emlak İstatistikleri</a>    </li>
+                    <li><a href="#">Gelir İstatistikleri </a></li>
+                    <li><a href="#">Muhakemat İstatistikleri</a>   </li>
+
+                    <li><a href="#">Personel İstatistikleri</a>  </li>
+                    <li><a href="#">Muhasebe İstatistikleri</a>  </li>
+
+
+
+                </ul>
+
+            </li>
+
+            <li><a href="#">FORMLAR</a>  </li>
+            <li><a href="#">BİLGİ EDİNME</a>   </li>
+            <li><a href="#">İLETİŞİM</a>    </li>
+        </ul>
 
 
 
