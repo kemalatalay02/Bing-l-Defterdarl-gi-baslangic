@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="yonetici.master.cs" Inherits="yonetici_paneli_yonetici" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="yonetici.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .silider {
+            height: 200px;
+        }
+
+        .menu {
+            width: 300px;
+        }
+
+        .master {
+            width: 660px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div class="yoneticiAnasayfa">
+
+            <div class="silider">
+            </div>
+            <div class="menu">
+                <div>&nbsp;&nbsp;&nbsp;<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    -MENÜLER</a> </div>
+                <div style="width: 310px; height: 15px; background-color: red;"></div>
+                <div>&nbsp;&nbsp;&nbsp;<a href="#">-HABER EKLEME PANELİ</a> </div>
+                <div style="width: 310px; height: 20px; background-color: red;"></div>
+                <div>&nbsp;&nbsp;&nbsp; <a href="#">-DUYRU EKLEME PANELİ</a></div>
+                <div style="width: 310px; height: 20px; background-color: red;"></div>
+                <div>&nbsp;&nbsp;&nbsp;<a href="#">-İHALE EKLEME PANELİ</a> </div>
+                <div style="width: 310px; height: 20px; background-color: red;"></div>
+                <div>&nbsp;&nbsp;&nbsp;<a href="#">-PERSONEL EKLEME PANELİ</a> </div>
+                <div style="width: 310px; height: 20px; background-color: red;"></div>
+                <div>&nbsp;&nbsp;&nbsp;<a href="#">-FORM EKLEME PANELİ</a> </div>
+                <div style="width: 310px; height: 20px; background-color: red;"></div>
+                <div>&nbsp;&nbsp;&nbsp; <a href="#">-İSTATİSTİK EKLEME PANELİ</a></div>
+                <div style="width: 310px; height: 20px; background-color: red;"></div>
+                <div>&nbsp;&nbsp; <a href="#">-MEVZUAT EKLEME PANELİ</a></div>
+                <div style="width: 310px; height: 20px; background-color: red;"></div>
+                <div>&nbsp;&nbsp;&nbsp;<a href="#">-İÇ KONTROL EKLEME PANELİ</a> </div>
+                <div style="width: 310px; height: 15px; background-color: red;"></div>
+                <div>&nbsp;&nbsp;&nbsp;<a href="#">-İLETİŞİM BİLGİ EKLEME PANELİ</a></div>
+                <div style="width: 310px; height: 15px; background-color: red;"></div>
+
+            </div>
+            <div class="master">
+
+                <%--<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>--%>
+            </div>
+
+        </div>
+
+
+
+
+    </form>
+</body>
+</html>

@@ -65,7 +65,7 @@
                 </div>
                 <div class="menu">
                     <ul class="birimmenu">
-            <li class="hakımizda">
+            <li class="hakimizda">
                 <a href="#">HAKIMIZDA</a>
                 <ul class="Hakımizdagizli">
                     <li><a href="#">Hakımızda</a>    </li>
@@ -147,8 +147,34 @@
 
             </li>
 
-            <li><a href="#">FORMLAR</a>  </li>
-            <li><a href="#">BİLGİ EDİNME</a>   </li>
+             <li class="formlar">
+                <a href="#">FORMLAR </a>
+                <ul class="formlargizli">
+
+                    <li><a href="#">Atanma Formu</a>    </li>
+                    <li><a href="#">Emeklilik İstek Formu </a></li>
+                    <li><a href="#"> Güvenlik Soruştırması Dilekçesi Formu</a>   </li>
+
+                    <li><a href="#">Kayıp Kimlik Formu</a>  </li>
+                    <li><a href="#">Mal Bildirim Formu</a>   </li>
+                    <li><a href="#">Mal Bildirim Zarfı</a> </li>
+                    <li><a href="#">Maliye Kimlik Formu</a>  </li>
+                    <li><a href="#">Naklen Atanma Formu</a> </li>
+                    <li><a href="#">Pasaport Talep Formu</a>  </li>
+
+
+                     <li><a href="#">Personel Nakil Bildrimi Formu</a>  </li>
+                    <li><a href="#">Staj Formu</a>   </li>
+                    <li><a href="#">Tanıtım Formu</a> </li>
+                    <li><a href="#">Tedavi Yardım Beyannamesi Formu</a>  </li>
+                    <li><a href="#">Yurt Dışı İzin Formu</a> </li>
+                    
+
+
+                </ul>
+
+            </li>
+            <li><a href="https://www.bimer.gov.tr/">BİLGİ EDİNME</a>   </li>
             <li><a href="#">İLETİŞİM</a>    </li>
         </ul>
 

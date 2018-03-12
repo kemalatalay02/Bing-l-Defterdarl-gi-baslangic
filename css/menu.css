@@ -70,7 +70,9 @@ li.birimler ul li a {
 }
 /*//............................................birimler*/
     li.birimler ul li a:hover {
-        background-color: red;
+        background-color: white;
+        color:red;
+
     }
 
 .birimmenu > li > a {
@@ -120,7 +122,7 @@ li.birimler {
             opacity: 1;
         }
          /*...............hakımızda...............................................................*/
-         li.hakımizda ul li a {
+         li.hakimizda ul li a {
     text-decoration: none;
     color: white;
     background-color: blue;
@@ -130,10 +132,11 @@ li.birimler {
     font-weight: lighter;
     width:150px;
 }
-         li.hakımizda ul li a:hover {
-        background-color: red;
+         li.hakimizda ul li a:hover {
+        background-color: white;
+        color:red;
     }
-         li.hakımizda {
+         li.hakimizda {
     position: relative;
     perspective:60px;
     -webkit-perspective:60px;
@@ -141,20 +144,20 @@ li.birimler {
     -moz-perspective:60px;
 }
 
-    li.hakımizda ul {
+    li.hakimizda ul {
         position: absolute;
-        transition: all 0.2s  ease-out;
-        -webkit-transition: all 0.2s ease-out;
-        -moz-transition: all 0.2s ease-out;
-        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s  ;
+        -webkit-transition: all 0.2s ;
+        -moz-transition: all 0.2s ;
+        -o-transition: all 0.2s ;
         transform-origin:40% 60%;
         
       -webkit-transform-origin :40% 60%;
       -moz-transform-origin:40% 60%;
-      -o-transform-origin:40% 60%;;
+      -o-transform-origin:40% 60%;
     }
 
-        li.hakımizda ul.hakımizdagizli {
+        li.hakimizda ul.hakimizdagizli {
             visibility: hidden;
             opacity: 0;
             transform: rotateX(-40deg);
@@ -163,7 +166,7 @@ li.birimler {
             -moz-transform: rotateX(-40deg);
         }
 
-        li.hakımizda ul.hakımizdagorunur {
+        li.hakımizda ul.hakimizdagorunur {
             visibility: visible;
             opacity: 1;
         }
@@ -186,7 +189,8 @@ li.birimler {
     width:150px;
 }
          li.kontrol ul li a:hover {
-        background-color: red;
+        background-color: white;
+        color:red;
     }
          li.kontrol {
     position: relative;
@@ -236,7 +240,8 @@ li.birimler {
     width:150px;
 }
          li.mevzuat ul li a:hover {
-        background-color: red;
+         background-color: white;
+        color:red;
     }
          li.mevzuat {
     position: relative;
@@ -286,7 +291,8 @@ li.istastik ul li a {
     width:150px;
 }
          li.istastik ul li a:hover {
-        background-color: red;
+        background-color: white;
+        color:red;
     }
          li.istastik {
     position: relative;
@@ -322,4 +328,54 @@ li.istastik ul li a {
             visibility: visible;
             opacity: 1;
         }
+/*......................formlar...............*/
+li.formlar ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    padding: 2px 20px;
+    display: block;
+    font-size: 15px;
+    font-weight: lighter;
+    width:150px;
+}
+         li.formlar ul li a:hover {
+         background-color: white;
+        color:red;
+    }
+         li.formlar {
+    position: relative;
+    perspective:60px;
+    -webkit-perspective:60px;
+    
+    -moz-perspective:60px;
+}
+
+    li.formlar ul {
+        position: absolute;
+        transition: all 0.2s  ease-out;
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transform-origin:40% 60%;
+        
+      -webkit-transform-origin :40% 60%;
+      -moz-transform-origin:40% 60%;
+      -o-transform-origin:40% 60%;
+    }
+
+        li.formlar ul.formlargizli{
+            visibility: hidden;
+            opacity: 0;
+            transform: rotateX(-40deg);
+            -webkit-transform: rotateX(-40deg);
+            -o-transform: rotateX(-40deg);
+            -moz-transform: rotateX(-40deg);
+        }
+
+        li.istastik ul.formlargorunur {
+            visibility: visible;
+            opacity: 1;
+        }
+
 

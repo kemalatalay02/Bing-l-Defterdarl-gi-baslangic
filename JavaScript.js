@@ -12,13 +12,13 @@ $(function () {
 });
 //hakımızda...............................................
 $(function () {
-    $('li.hakımizda').hover(function () {
+    $('li.hakimizda').hover(function () {
         //üzderüne gelince tetiklenecek fonksiyon
-        $(this).find('ul').removeClass('hakımizdagizli').addClass('hakımizdagorunur');
+        $(this).find('ul').removeClass('hakimizdagizli').addClass('hakimizdagorunur');
     }, function () {
         //üzerinden ayrıldıgında tetiklenecek fonksiyon
 
-        $(this).find('ul').removeClass('hakımizdagorunur').addClass('hakımizdagizli');
+        $(this).find('ul').removeClass('hakimizdagorunur').addClass('hakimizdagizli');
     })
 });
 //.....................içkontrol
@@ -54,3 +54,21 @@ $(function () {
         $(this).find('ul').removeClass('istastikgorunur').addClass('istastikgizli');
     })
 });
+
+//////................................................formlar
+
+$(function () {
+    $('li.formlar').hover(function () {
+        //üzderüne gelince tetiklenecek fonksiyon
+        $(this).find('ul').removeClass('formlargizli').addClass('formlargorunur');
+    }, function () {
+        //üzerinden ayrıldıgında tetiklenecek fonksiyon
+
+        $(this).find('ul').removeClass('formlargorunur').addClass('formlargizli');
+    })
+});
+
+
+
+
+

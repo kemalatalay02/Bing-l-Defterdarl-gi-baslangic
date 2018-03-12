@@ -89,6 +89,13 @@
     font-family:Verdana;
     color:blue;
 }*/
+
+.anasablon .Anasayfa .menu a:hover {
+background-color:white;
+ /*burun a: değiştirdi*/
+color:red;
+
+}
 .anasablon .Anasayfa .duyrular{
     height:400px;
     width:200px;
