@@ -30,35 +30,37 @@
             <div class="silider">
             </div>
             <div class="menu">
-                <div>&nbsp;&nbsp;&nbsp;<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    -MENÜLER</a> </div>
+                <div style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    -MENÜLER </div>
                 <div style="width: 310px; height: 15px; background-color: red;"></div>
-                <div>&nbsp;&nbsp;&nbsp;<a href="#">-HABER EKLEME PANELİ</a> </div>
+                <div  >&nbsp;&nbsp;&nbsp;<a href="haberEkleme.aspx">-HABER EKLEME PANELİ</a> </div>
                 <div style="width: 310px; height: 20px; background-color: red;"></div>
-                <div>&nbsp;&nbsp;&nbsp; <a href="#">-DUYRU EKLEME PANELİ</a></div>
+                <div  >&nbsp;&nbsp;&nbsp; <a href="DuyruEkleme.aspx">-DUYRU EKLEME PANELİ</a></div>
                 <div style="width: 310px; height: 20px; background-color: red;"></div>
-                <div>&nbsp;&nbsp;&nbsp;<a href="#">-İHALE EKLEME PANELİ</a> </div>
+                <div>&nbsp;&nbsp;&nbsp;<a href="ihaleEkleme.aspx">-İHALE EKLEME PANELİ</a> </div>
                 <div style="width: 310px; height: 20px; background-color: red;"></div>
-                <div>&nbsp;&nbsp;&nbsp;<a href="#">-PERSONEL EKLEME PANELİ</a> </div>
+                <div >&nbsp;&nbsp;&nbsp;<a href="personelEkleme.aspx">-PERSONEL EKLEME PANELİ</a> </div>
                 <div style="width: 310px; height: 20px; background-color: red;"></div>
-                <div>&nbsp;&nbsp;&nbsp;<a href="#">-FORM EKLEME PANELİ</a> </div>
+                <div>&nbsp;&nbsp;&nbsp;<a href="formEkleme.aspx">-FORM EKLEME PANELİ</a> </div>
                 <div style="width: 310px; height: 20px; background-color: red;"></div>
-                <div>&nbsp;&nbsp;&nbsp; <a href="#">-İSTATİSTİK EKLEME PANELİ</a></div>
+                <div >&nbsp;&nbsp;&nbsp; <a href="istatistikEkleme.aspx">-İSTATİSTİK EKLEME PANELİ</a></div>
                 <div style="width: 310px; height: 20px; background-color: red;"></div>
-                <div>&nbsp;&nbsp; <a href="#">-MEVZUAT EKLEME PANELİ</a></div>
+                <div >&nbsp;&nbsp; <a href="mevzuatEkleme.aspx">-MEVZUAT EKLEME PANELİ</a></div>
                 <div style="width: 310px; height: 20px; background-color: red;"></div>
-                <div>&nbsp;&nbsp;&nbsp;<a href="#">-İÇ KONTROL EKLEME PANELİ</a> </div>
+                <div >&nbsp;&nbsp;&nbsp;<a href="kontrolEkleme.aspx">-İÇ KONTROL EKLEME PANELİ</a> </div>
                 <div style="width: 310px; height: 15px; background-color: red;"></div>
-                <div>&nbsp;&nbsp;&nbsp;<a href="#">-İLETİŞİM BİLGİ EKLEME PANELİ</a></div>
+                <div >&nbsp;&nbsp;&nbsp;<a href="iletisimEkleme.aspx">-İLETİŞİM BİLGİ EKLEME PANELİ</a></div>
                 <div style="width: 310px; height: 15px; background-color: red;"></div>
-
+                <div >&nbsp;&nbsp;&nbsp;<a href="sifreEkleme.aspx">-ŞİFRE EKLEME EKLEME PANELİ</a></div>
+                <div style="width: 310px; height: 15px; background-color: red;"></div>
             </div>
             <div class="master">
 
-                <%--<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
-        </asp:ContentPlaceHolder>--%>
+        </asp:ContentPlaceHolder>
             </div>
 
+            
         </div>
 
 
