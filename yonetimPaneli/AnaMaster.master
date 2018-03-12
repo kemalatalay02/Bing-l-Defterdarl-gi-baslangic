@@ -1,0 +1,201 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AnaMaster.master.cs" Inherits="AnaMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>BİNGÖL DEFTERDARLIĞI</title>
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="JavaScript.js"></script>
+    <link href="css/menu.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 151px;
+            height: 156px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="anasablon" style="width: 1300px; height: 1300px; background-color: blue; margin: auto;">
+            <div class="defFoto" style="height: auto; width: auto; background-color: white; float: left; margin-top: 19px; border: 1px solid #00F;">
+                <h1>Defterdarımız</h1>
+                <img alt="b" class="auto-style1" src="resimler/def.PNG" />
+            </div>
+            <div class="Anasayfa" style="width: 980px; height: 1300px; background-color: white; margin: auto;">
+
+                <div class="ust " style="height: 20px; width: 980px; background-color: blue"></div>
+                <%--<div class="ust " style="height:15px; width:980px; background-color:white"></div>--%>
+
+                <div class="ustmenu " style="height: 30px; width: 960px;  background-color: blue; margin: 10px; font-family:Verdana;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    <a href="#" style="color:white;  height:30px;">ANASAYFA</a>  </div>
+                <%--<div class="ustbosluk " style="height:15px; width:960px; background-color:red ;margin:10px;" ></div>--%>
+                <div class="slider">
+                    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+                    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+
+                        <ContentTemplate>
+
+                            <asp:Timer ID="Timer1" runat="server" Interval="3000" OnTick="Timer1_Tick"></asp:Timer>
+                       <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+
+
+                    <asp:Button ID="Button2" runat="server" Text="ileri" OnClick="Button2_Click" Visible="False" />
+                    <asp:Button ID="Button1" runat="server" Text="geri" OnClick="Button1_Click" Visible="False" />
+
+
+                    <div class="Bakanliklogo">
+                         </div>
+                    <div class="defisim">BİNGÖL DEFTERDARLIĞI</div>
+                    <div class="bayrak">
+                        
+
+                    </div>
+                   <%--  
+                    <asp:Button ID="Button2" runat="server" Text="ileri" OnClick="Button2_Click" Visible="False" />
+                    <asp:Button ID="Button1" runat="server" Text="geri" OnClick="Button1_Click" Visible="False" />
+
+
+                    <asp:Label ID="Label1" runat="server" Text=""></asp:Label>--%>
+                </div>
+                <div class="menu">
+                    <ul class="birimmenu">
+            <li class="hakimizda">
+                <a href="#">HAKIMIZDA</a>
+                <ul class="Hakımizdagizli">
+                    <li><a href="#">Hakımızda</a>    </li>
+                    <li><a href="#">Görev ve Misyonumuz</a>     </li>
+                    <li><a href="#">Defterdarımız</a>   </li>
+                </ul>
+            </li>
+            <li class="birimler">
+                <a href="#">BİRİMLER </a>
+                <ul class="gizli">
+
+                    <li><a href="#">Personel Müdürlüğü</a>    </li>
+                    <li><a href="#">Muhasebe Müdürlüğü</a>     </li>
+                    <li><a href="#">Muhakemet Müdürlüğü</a>   </li>
+
+                    <li><a href="#">Milli Emlak Müdrülüğ</a>  </li>
+                    <li><a href="#">Gelir Müdürlüğü</a>   </li>
+                    <li><a href="#">Vergi Dairesi Müdürlüğü</a> </li>
+                    <li><a href="#">K.D.S.S. Müdürlüğü</a>  </li>
+
+
+                </ul>
+
+            </li>
+            <li class="mevzuat">
+                <a href="#">MEVZUAT </a>
+                <ul class="mevzuatgizli">
+
+                    <li><a href="#">Kanunlar</a>    </li>
+
+                    <li><a href="#">Kanun Hükmünde Karanameler </a></li>
+                    <li><a href="#">Yönetmelikler</a>   </li>
+
+                    <li><a href="#">Vergi MEVZUATI</a>  </li>
+                    <li><a href="#">Bakanlık Yönetmelikleri</a>   </li>
+                    <li><a href="#">Genelgeler</a> </li>
+
+
+
+                </ul>
+
+            </li>
+
+
+            <li class="kontrol">
+                <a href="#">İÇ KONTROL </a>
+                <ul class="Kontrolgizli">
+
+                    <li><a href="#">İc Kontrol Kararlılık Beyanı</a>    </li>
+                    <li><a href="#">Fonsiyonel Teşkilat Şemaları </a></li>
+                    <li><a href="#">Birim Yönergesi</a>   </li>
+
+                    <li><a href="#">Görev  Dağılımları</a>  </li>
+                    <li><a href="#">İşlem Süreçleri</a>   </li>
+                    <li><a href="#">İşlem Yönergeleri</a> </li>
+                    <li><a href="#">Hizmet Standartları</a>  </li>
+                    <li><a href="#">Etik</a> </li>
+                    <li><a href="#">Şikayet Bidirim Yöntemleri</a>  </li>
+
+
+                </ul>
+
+            </li>
+
+            <li class="istastik">
+                <a href="#">İSTATİSTİKLER </a>
+                <ul class="istastikgizli">
+
+                    <li><a href="#">Milli Emlak İstatistikleri</a>    </li>
+                    <li><a href="#">Gelir İstatistikleri </a></li>
+                    <li><a href="#">Muhakemat İstatistikleri</a>   </li>
+
+                    <li><a href="#">Personel İstatistikleri</a>  </li>
+                    <li><a href="#">Muhasebe İstatistikleri</a>  </li>
+
+
+
+                </ul>
+
+            </li>
+
+             <li class="formlar">
+                <a href="#">FORMLAR </a>
+                <ul class="formlargizli">
+
+                    <li><a href="#">Atanma Formu</a>    </li>
+                    <li><a href="#">Emeklilik İstek Formu </a></li>
+                    <li><a href="#"> Güvenlik Soruştırması Dilekçesi Formu</a>   </li>
+
+                    <li><a href="#">Kayıp Kimlik Formu</a>  </li>
+                    <li><a href="#">Mal Bildirim Formu</a>   </li>
+                    <li><a href="#">Mal Bildirim Zarfı</a> </li>
+                    <li><a href="#">Maliye Kimlik Formu</a>  </li>
+                    <li><a href="#">Naklen Atanma Formu</a> </li>
+                    <li><a href="#">Pasaport Talep Formu</a>  </li>
+
+
+                     <li><a href="#">Personel Nakil Bildrimi Formu</a>  </li>
+                    <li><a href="#">Staj Formu</a>   </li>
+                    <li><a href="#">Tanıtım Formu</a> </li>
+                    <li><a href="#">Tedavi Yardım Beyannamesi Formu</a>  </li>
+                    <li><a href="#">Yurt Dışı İzin Formu</a> </li>
+                    
+
+
+                </ul>
+
+            </li>
+            <li><a href="https://www.bimer.gov.tr/">BİLGİ EDİNME</a>   </li>
+            <li><a href="#">İLETİŞİM</a>    </li>
+        </ul>
+
+
+
+                </div>
+                <div class="basliklar">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DUYRULAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BİZDEN&nbsp; HABERLER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; İHALELER</div>
+                <div class="duyrular"></div>
+                <div class="haberler"></div>
+                <div class="ihaleler"></div>
+                <div class="footer"></div>
+
+
+            </div>
+
+        </div>
+
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+    </form>
+</body>
+</html>
