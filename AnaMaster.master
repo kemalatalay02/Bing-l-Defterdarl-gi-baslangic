@@ -23,7 +23,7 @@
         <div class="anasablon" style="width: 1300px; height: 1300px; background-color: blue; margin: auto;">
             <div class="defFoto" style="height: auto; width: auto; background-color: white; float: left; margin-top: 19px; border: 1px solid #00F;">
                 <h1>Defterdarımız</h1>
-                <img alt="b" class="auto-style1" src="resimler/def.PNG" />
+                <img alt="b" class="auto-style1" src="sliderResim/def.PNG" />
             </div>
             <div class="Anasayfa" style="width: 980px; height: 1300px; background-color: white; margin: auto;">
 

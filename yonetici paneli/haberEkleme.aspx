@@ -9,19 +9,7 @@
         .auto-style4 {
             width: 101px;
         }
-        .auto-style5 {
-            width: 175px;
-            height: 21px;
-        }
-        .auto-style6 {
-            width: 356px;
-            height: 21px;
-        }
-        .auto-style7 {
-            width: 100px;
-            height: 21px;
-        }
-    </style>
+        </style>
     
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
@@ -92,19 +80,23 @@
                 <HeaderTemplate>
                     <table class="textbooxs">
                         <tr >
-                            <td class="auto-style6"  >&nbsp;HABAER ADI</td>
-                            <td class="auto-style5">&nbsp;&nbsp; GÜNCELLE</td>
-                            <td class="auto-style7">&nbsp;&nbsp; SİL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+                            <td class="haberadi"  >&nbsp;HABAER ADI</td>
+                            <td class="guncelle">GÜNCELLEME</td>
+                            <td class="sil">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SİL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
                         </tr>
                     </table>
                 </HeaderTemplate>
                 <ItemTemplate>
                     <table class="auto-style1">
                         <tr>
-                            <td class="auto-style6">&nbsp;&nbsp;<asp:Literal ID="Literal1" runat="server" Text='<%# Eval("habarAdi") %>'></asp:Literal>
+                            <td class="haberadi">&nbsp;&nbsp;<asp:Literal ID="Literal1" runat="server" Text='<%# Eval("habarAdi") %>'></asp:Literal>
                             </td>
-                            <td class="auto-style5">GÜNCELLE</td>
-                            <td> <a href="haberEkleme.aspx?haberID=<%#Eval("haberID")%>&islem=sil">SİL</a> </td>
+                            <td class="guncelle">
+                                
+                             
+                                <a href="haberGuncelleme.aspx?haberID=<%#Eval("haberID")%>" class="guncelle">GÜNCELLEME</a>
+                            </td>
+                            <td class="sil"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="haberEkleme.aspx?haberID=<%#Eval("haberID")%>&islem=sil" class="butonGoresel">SİL</a> </td>
                         </tr>
                     </table>
                 </ItemTemplate>

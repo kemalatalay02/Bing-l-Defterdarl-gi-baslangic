@@ -18,7 +18,7 @@ public partial class AnaMaster : System.Web.UI.MasterPage
         //}
         if (sayac == 2)
         {
-            Label1.Text = "<img src='resimler/2.jpg' width='960' height='400'/>";
+            Label1.Text = "<img src='sliderResim/2.jpg' width='960' height='400'/>";
         }
         //else if (sayac == 3)
         //{
@@ -30,52 +30,52 @@ public partial class AnaMaster : System.Web.UI.MasterPage
         //}
         else if (sayac == 5)
         {
-            Label1.Text = "<img src='resimler/5.png' width='960' height='400'/>";
+            Label1.Text = "<img src='sliderResim/5.png' width='960' height='400'/>";
         }
         else if (sayac == 6)
         {
-            Label1.Text = "<img src='resimler/6.png' width='960' height='400'/>";
+            Label1.Text = "<img src='sliderResim/6.png' width='960' height='400'/>";
         }
         //..........................................
         else if (sayac == 7)
         {
-            Label1.Text = "<img src='resimler/7.jpg' width='960' height='400'/>";
+            Label1.Text = "<img src='sliderResim/7.jpg' width='960' height='400'/>";
         }
         else if (sayac == 8)
         {
-            Label1.Text = "<img src='resimler/8.jpg' width='960' height='400'/>";
+            Label1.Text = "<img src='sliderResim/8.jpg' width='960' height='400'/>";
         }
         else if (sayac == 9)
         {
-            Label1.Text = "<img src='resimler/9.jpg' width='960' height='400'/>";
+            Label1.Text = "<img src='sliderResim/9.jpg' width='960' height='400'/>";
         }
         else if (sayac == 10)
         {
-            Label1.Text = "<img src='resimler/10.jpg' width='960' height='400'/>";
+            Label1.Text = "<img src='sliderResim/10.jpg' width='960' height='400'/>";
         }
         else if (sayac == 11)
         {
-            Label1.Text = "<img src='resimler/11.jpg' width='960' height='400'/>";
+            Label1.Text = "<img src='sliderResim/11.jpg' width='960' height='400'/>";
         }
         else if (sayac == 12)
         {
-            Label1.Text = "<img src='resimler/12.jpg' width='960' height='400'/>";
+            Label1.Text = "<img src='sliderResim/12.jpg' width='960' height='400'/>";
         }
         else if (sayac == 13)
         {
-            Label1.Text = "<img src='resimler/13.jpg' width='960' height='400'/>";
+            Label1.Text = "<img src='sliderResim/13.jpg' width='960' height='400'/>";
         }
         else if (sayac ==14)
         {
-            Label1.Text = "<img src='resimler/14.jpg' width='960' height='400'/>";
+            Label1.Text = "<img src='sliderResim/14.jpg' width='960' height='400'/>";
         }
         else if (sayac == 15)
         {
-            Label1.Text = "<img src='resimler/15.jpg' width='960' height='400'/>";
+            Label1.Text = "<img src='sliderResim/15.jpg' width='960' height='400'/>";
         }
         else if (sayac == 16)
         {
-            Label1.Text = "<img src='resimler/16.png' width='960' height='400'/>";
+            Label1.Text = "<img src='sliderResim/16.png' width='960' height='400'/>";
         }
     }
     protected void Page_Load(object sender, EventArgs e)

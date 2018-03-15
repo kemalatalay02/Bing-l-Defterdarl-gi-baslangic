@@ -20,16 +20,15 @@
     .anasablon .Anasayfa .slider .Bakanliklogo {
         height: 80px;
         width: 95px;
-        
-         margin-top:110px;
-        background-image: url('../resimler/Ekran%20Alıntısı.PNG');
+        margin-top: 110px;
+        background-image: url('../sliderResim/Ekran Alıntısı.PNG');
         margin-left: 10px;
         float: left;
         position: absolute;
-          background-size:cover;
-    top: -5px;
-    left: 2px;
-}
+        background-size: cover;
+        top: -5px;
+        left: 2px;
+    }
 .anasablon .Anasayfa .slider .defisim {
     height:40px;
     width:300px;
@@ -47,9 +46,8 @@
     .anasablon .Anasayfa .slider .bayrak {
         height: 90px;
         position: absolute;
-        background-image: url('../resimler/turk_bayrak.png');
         width: 90px;
-      
+        background-image: url('../sliderResim/turk_bayrak.png');
         float: right;
         margin-top: 90px;
         top: -61px;
@@ -57,7 +55,7 @@
         margin-left: 10px;
         margin-right: 10px;
         margin-bottom: 10px;
-        background-size:cover;
+        background-size: cover;
     }
 .anasablon .Anasayfa .menu {
     height:40px;

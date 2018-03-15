@@ -7,11 +7,40 @@
     border-color: inherit;
     border-width: 0;
     padding: 0;
-    margin-left: 0;
+    
     margin-right: 0;
     margin-top: 0;
 }
+.sil{
+    width:120px;
+    background-color:#2a595c;
+    color:white;
+}
+.guncelle{
+    width:150px;
+    background-color:#2a595c;
+    color:white;
+}
+.haberadi{
+    width:380px;
+    background-color:#2a595c;
+    color:white;
+}
+.silalt{
+    width:120px;
 
+    
+}
+.guncellealt{
+    width:150px;
+    
+
+}
+.haberadialt{
+    width:380px;
+   
+    
+}
 .yoneticiAnasayfa {
     width: 980px;
     height: 1300px;
@@ -40,7 +69,6 @@
             color: red;
         }
         .textbooxs{
-            width:625px;
             border: 1px dotted #2a595c;
 
         }
