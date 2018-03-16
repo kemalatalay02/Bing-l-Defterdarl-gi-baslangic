@@ -37,29 +37,21 @@ public partial class yonetici_paneli_haberEkleme : System.Web.UI.Page
         
     }
 
-    protected void ButArti_Click(object sender, EventArgs e)
-    {
-        pnlHaberEkleme.Visible = true;
-    }
-
-    protected void BTNeksi_Click(object sender, EventArgs e)
-    {
-        pnlHaberEkleme.Visible = false;
-    }
+  
 
     protected void BtnHaberEkleme_Click(object sender, EventArgs e)
     {
-        if (FileUpHabEkleme.HasFile)
+        if (FileUpFormEkleme.HasFile)
         {
-            FileUpHabEkleme.SaveAs(Server.MapPath("/resimler/" + FileUpHabEkleme.FileName));
-            SqlCommand cmdhaberEkle = new SqlCommand("insert into haberTbl(habarAdi,haberOzeti,haberResim,haberIcerik) values('" + TextHEA.Text + "','" + TextHEO.Text + "','/resimler" + FileUpHabEkleme.FileName + "','"+CKid.Text+"')", baglan.baglan());
+            FileUpFormEkleme.SaveAs(Server.MapPath("/resimler/" + FileUpFormEkleme.FileName));
+            SqlCommand cmdhaberEkle = new SqlCommand("insert into haberTbl(habarAdi,haberOzeti,haberResim,haberIcerik) values('" + TextHEA.Text + "','" + TextHEO.Text + "','/resimler" + FileUpFormEkleme.FileName + "','"+CKid.Text+"')", baglan.baglan());
             cmdhaberEkle.ExecuteNonQuery();
             Response.Redirect("haberEkleme.aspx");
 
         }
         else
         {
-            BtnHaberEkleme.Text = "Lütfen Resim Ekleyiniz...";
+            FileUpHabEkleme.Text = "Lütfen Resim Ekleyiniz...";
         }
     }
 
@@ -72,5 +64,15 @@ public partial class yonetici_paneli_haberEkleme : System.Web.UI.Page
     {
 
         PnlHaberDuz.Visible = false;
+    }
+
+    protected void ButArti_Click1(object sender, EventArgs e)
+    {
+        pnlHaberEkleme.Visible = true;
+    }
+
+    protected void BTNeksi_Click1(object sender, EventArgs e)
+    {
+        pnlHaberEkleme.Visible = false;
     }
 }

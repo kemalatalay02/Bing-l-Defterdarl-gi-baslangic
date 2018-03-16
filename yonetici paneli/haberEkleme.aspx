@@ -16,10 +16,10 @@
     <div>
         <div style="height:5px;width:650px;"></div>
         <div style="height:25px;width:650px; color:white; ">
-            &nbsp;&nbsp;<asp:Button ID="ButArti" runat="server" BackColor="Red" ForeColor="White" Height="25px" OnClick="ButArti_Click" Text="+" Width="25px" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="BTNeksi" runat="server" BackColor="Red" ForeColor="White" Height="25px" OnClick="BTNeksi_Click" Text="-" Width="25px" />
+            &nbsp;&nbsp;<asp:Button ID="ButArti" runat="server" BackColor="Red" ForeColor="White" Height="25px" Text="+" Width="25px" OnClick="ButArti_Click1" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="BTNeksi" runat="server" BackColor="Red" ForeColor="White" Height="25px"  Text="-" Width="25px" OnClick="BTNeksi_Click1" />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            HABER EKLEME PANELİ
+           HABER EKLEME PANELİ
 
         </div>
         <asp:Panel ID="pnlHaberEkleme" runat="server" BackColor="#669999" ForeColor="White">
@@ -34,28 +34,29 @@
                         <asp:TextBox ID="TextHEA" runat="server" Width="550px" CssClass="textbooxs" TextMode="MultiLine" Height="100px"></asp:TextBox>
                     </td>
                 </tr>
-                <tr>
+               <tr>
                     <td class="auto-style4" style="text-align: right">Haber Özeti:</td>
                     <td>
                         <asp:TextBox ID="TextHEO" runat="server"  Width="550px" TextMode="MultiLine" Height="100px"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style4" style="text-align:  right;width:550px;">Haber İçeriği:</td>
+                    <td class="auto-style4" style="text-align:  right;width:550px;">Duyuru İçeriği:</td>
                     <td>
                         <CKEditor:CKEditorControl ID="CKid"  runat="server"></CKEditor:CKEditorControl>
                     </td>
                 </tr>
+               
                 <tr>
-                    <td class="auto-style4" style="text-align: right">&nbsp;Resim:</td>
+                    <td class="auto-style4" style="text-align: right">&nbsp;RESİM EKLE:</td>
                     <td>
-                        <asp:FileUpload ID="FileUpHabEkleme" runat="server" CssClass="textbooxs" Width="550px" />
+                        <asp:FileUpload ID="FileUpFormEkleme" runat="server" CssClass="textbooxs" Width="550px" />
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style4" style="text-align: right">&nbsp;</td>
                     <td>
-                        <asp:Button ID="BtnHaberEkleme" runat="server" Text="EKLE" CssClass="butonGoresel" Width="84px" BackColor="#FF3300" OnClick="BtnHaberEkleme_Click" />
+                        <asp:Button ID="FileUpHabEkleme" runat="server" Text="EKLE" CssClass="butonGoresel" Width="84px" BackColor="#FF3300" OnClick="BtnHaberEkleme_Click" />
                     </td>
                 </tr>
                 <tr>
@@ -96,7 +97,9 @@
                              
                                 <a href="haberGuncelleme.aspx?haberID=<%#Eval("haberID")%>" class="guncelle">GÜNCELLEME</a>
                             </td>
+                            
                             <td class="sil"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="haberEkleme.aspx?haberID=<%#Eval("haberID")%>&islem=sil" class="butonGoresel">SİL</a> </td>
+                        
                         </tr>
                     </table>
                 </ItemTemplate>
