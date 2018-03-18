@@ -27,10 +27,9 @@ public partial class yonetici_paneli_FormGuncelleme : System.Web.UI.Page
         }
 
     }
-    protected void Button1_Click(object sender, EventArgs e)
+   
+    protected void BtnFormGuncelle_Click(object sender, EventArgs e)
     {
-       
-
         if (FileUpformGuncelle.HasFile)
         {
             FileUpformGuncelle.SaveAs(Server.MapPath("/dosyalar/" + FileUpformGuncelle.FileName));
