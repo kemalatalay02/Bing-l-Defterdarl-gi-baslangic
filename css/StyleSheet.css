@@ -97,11 +97,18 @@ color:red;
 .anasablon .Anasayfa .duyrular{
     height:400px;
     width:200px;
-    background-color:blue;
+    background-color:#2a595c;
+
     
     float:left;
      margin-left:10px;
-}
+}  
+
+.anasablon .Anasayfa .haberler {
+    height:400px;
+    width:540px;
+    background-color:blue;
+    /*ma
 .anasablon .Anasayfa .haberler {
     height:400px;
     width:540px;

@@ -4,11 +4,15 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
+using System.Data.SqlClient;
 
 public partial class AnaMaster : System.Web.UI.MasterPage
 {
+    veri baglan = new veri();
     public static int sayac = 0;
 
+   
     public void slider()
     {
 
@@ -80,6 +84,12 @@ public partial class AnaMaster : System.Web.UI.MasterPage
     }
     protected void Page_Load(object sender, EventArgs e)
     {
+        // duyru getirme
+        SqlCommand duyru = new SqlCommand("select * from duyruTbl", baglan.baglan());
+        SqlDataReader drduyru = duyru.ExecuteReader();
+        DataLDuyru.DataSource = drduyru;
+        DataLDuyru.DataBind();
+        //...................................................................
         sayac = sayac + 1;
         if (sayac == 16)
         {
@@ -114,4 +124,6 @@ public partial class AnaMaster : System.Web.UI.MasterPage
             sayac = 16;
         }
     }
+
+    
 }
