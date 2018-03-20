@@ -90,6 +90,13 @@ public partial class AnaMaster : System.Web.UI.MasterPage
         DataLDuyru.DataSource = drduyru;
         DataLDuyru.DataBind();
         //...................................................................
+        // ihale getirme
+        SqlCommand ihale = new SqlCommand("select * from ihaleTbl", baglan.baglan());
+        SqlDataReader drihale = ihale.ExecuteReader();
+        DataLIhale.DataSource = drihale;
+        DataLIhale.DataBind();
+        
+        //...................................................................
         sayac = sayac + 1;
         if (sayac == 16)
         {
