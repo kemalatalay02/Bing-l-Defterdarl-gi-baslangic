@@ -9,8 +9,13 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="JavaScript.js"></script>
     <link href="css/menu.css" rel="stylesheet" />
+    
+
     <asp:ContentPlaceHolder ID="head" runat="server">
+        
     </asp:ContentPlaceHolder>
+   
+     
     <style type="text/css">
         .auto-style1 {
             width: 151px;
@@ -19,8 +24,90 @@
 
         .auto-style8 {
             width: 100%;
+           
         }
     </style>
+    <script src="sliderengine/jquery.js"></script>
+    <script src="sliderengine/amazingslider.js"></script>
+
+    <script src="sliderengine/initslider-1.js"></script>
+     <script type="text/javascript">
+
+        //birimler............................................
+        $(function () {
+            $('li.birimler').hover(function () {
+                //üzderüne gelince tetiklenecek fonksiyon
+                $(this).find('ul').removeClass('gizli').addClass('gorunur');
+            }, function () {
+                //üzerinden ayrıldıgında tetiklenecek fonksiyon
+
+                $(this).find('ul').removeClass('gorunur').addClass('gizli');
+            })
+        });
+        //hakımızda...............................................
+        $(function () {
+            $('li.hakimizda').hover(function () {
+                //üzderüne gelince tetiklenecek fonksiyon
+                $(this).find('ul').removeClass('hakimizdagizli').addClass('hakimizdagorunur');
+            }, function () {
+                //üzerinden ayrıldıgında tetiklenecek fonksiyon
+
+                $(this).find('ul').removeClass('hakimizdagorunur').addClass('hakimizdagizli');
+            })
+        });
+        //.....................içkontrol
+        $(function () {
+            $('li.kontrol').hover(function () {
+                //üzderüne gelince tetiklenecek fonksiyon
+                $(this).find('ul').removeClass('kontrolgizli').addClass('kontrolgorunur');
+            }, function () {
+                //üzerinden ayrıldıgında tetiklenecek fonksiyon
+
+                $(this).find('ul').removeClass('kontrolgorunur').addClass('kontrolgizli');
+            })
+        });
+        //...................mevzuat...............
+        $(function () {
+            $('li.mevzuat').hover(function () {
+                //üzderüne gelince tetiklenecek fonksiyon
+                $(this).find('ul').removeClass('mevzuatgizli').addClass('mevzuatgorunur');
+            }, function () {
+                //üzerinden ayrıldıgında tetiklenecek fonksiyon
+
+                $(this).find('ul').removeClass('mevzuatgorunur').addClass('mevzuatgizli');
+            })
+        });
+        //.................istatistikler.......................
+        $(function () {
+            $('li.istastik').hover(function () {
+                //üzderüne gelince tetiklenecek fonksiyon
+                $(this).find('ul').removeClass('istastikgizli').addClass('istastikgorunur');
+            }, function () {
+                //üzerinden ayrıldıgında tetiklenecek fonksiyon
+
+                $(this).find('ul').removeClass('istastikgorunur').addClass('istastikgizli');
+            })
+        });
+
+        //////................................................formlar
+
+        $(function () {
+            $('li.formlar').hover(function () {
+                //üzderüne gelince tetiklenecek fonksiyon
+                $(this).find('ul').removeClass('formlargizli').addClass('formlargorunur');
+            }, function () {
+                //üzerinden ayrıldıgında tetiklenecek fonksiyon
+
+                $(this).find('ul').removeClass('formlargorunur').addClass('formlargizli');
+            })
+        });
+
+
+
+
+
+
+    </script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -36,7 +123,7 @@
 
                 <div class="ustmenu " style="height: 30px; width: 960px; background-color: blue; margin: 10px; font-family: Verdana;">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-                    <a href="#" style="color: white; height: 30px;">ANASAYFA</a>
+                    <a href="http://localhost:1661/" style="color: white; height: 30px;">ANASAYFA</a>
                 </div>
                 <%--<div class="ustbosluk " style="height:15px; width:960px; background-color:red ;margin:10px;" ></div>--%>
                 <div class="slider">
@@ -69,12 +156,13 @@
                 </div>
                 <div class="menu">
                     <ul class="birimmenu">
+                        
                         <li class="hakimizda">
                             <a href="#">HAKIMIZDA</a>
-                            <ul class="Hakımizdagizli">
-                                <li><a href="#">Hakımızda</a>    </li>
-                                <li><a href="#">Görev ve Misyonumuz</a>     </li>
-                                <li><a href="#">Defterdarımız</a>   </li>
+                            <ul class="hakimizdagizli">
+                                <li><a href="hakimizdada.aspx">Hakımızda</a>    </li>
+                                <li><a href="Gorev.aspx">Görev ve Misyonumuz</a>     </li>
+                                <li><a href="Defterdarbilgi.aspx">Defterdarımız</a>   </li>
                             </ul>
                         </li>
                         <li class="birimler">
@@ -116,7 +204,7 @@
 
                         <li class="kontrol">
                             <a href="#">İÇ KONTROL </a>
-                            <ul class="Kontrolgizli">
+                            <ul class="kontrolgizli">
 
                                 <li><a href="#">İc Kontrol Kararlılık Beyanı</a>    </li>
                                 <li><a href="#">Fonsiyonel Teşkilat Şemaları </a></li>
@@ -185,11 +273,12 @@
 
 
                 </div>
-                <div class="basliklar">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DUYRULAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BİZDEN&nbsp; HABERLER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; İHALELER</div>
+                <div class="basliklar" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="DuyruDetay.aspx" style="color:white; text-decoration:none;">DUYRULAR</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="haberDetay.aspx" style="color:white; text-decoration:none;">BİZDEN&nbsp; HABERLER</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ihaleDetay.aspx" style="text-decoration:none; color:white;">İHALELER</a> </div>
                 <div class="duyrular">
                    <div style="height:1px;width:200px"></div>
-                    <marquee align="middle" scrollamount="1" height="400px" width="100%" direction="up" scrolldelay="1" onmouseover="this.stop();" onmouseout="this.start();">
-                    <asp:DataList ID="DataLDuyru" runat="server" Height="398px" >
+                    <marquee align="middle" scrollamount="1" position: absolute; height="400px" width="100%" direction="up" scrolldelay="1" onmouseover="this.stop();" onmouseout="this.start();">
+                   
+                         <asp:DataList ID="DataLDuyru" runat="server" Height="398px" >
                         <ItemTemplate>
                             <table class="auto-style8">
                                 <tr>
@@ -197,13 +286,15 @@
                                         <%--<asp:Image ID="Image1" runat="server" Height="35px" Width="35px" />--%>
                                       <img src="sliderResim/Ekran.PNG" style="background-size:cover; width: 30px; height: 30px;" />
                                     </td>
-                                    <td style="text-align: center; background-color: #2a595c; color: #FFFFFF">
+                                    <td style="text-align: center;  color: #FFFFFF">
                                         <asp:Literal ID="Literal1" runat="server" Text='<%# Eval("duyruAdi") %>'></asp:Literal>
                                     </td>
                                 </tr>
                                 <tr style="background-color: #2a595c; text-align: left; color: #FFFFFF">
                                     <td colspan="2" style="text-align: left">
-                                        <asp:Literal ID="Literal2" runat="server" Text='<%# Eval("duyruOzet") %>'></asp:Literal></td>
+                                      <a href="DuyruDetay.aspx?duyruID=<%#Eval("duyruID") %>" style="color:white ; text-decoration:none;"> <asp:Literal ID="Literal2" runat="server" Text='<%# Eval("duyruOzet") %>'></asp:Literal></a>  
+
+                                    </td>
                                 </tr>
                                 <tr style="text-align: right; background-color: #2a595c; color: #FFFFFF">
                                     <td colspan="2" style="text-align: right; border-bottom-style: dotted; border-bottom-width: 1px; border-bottom-color: #FFFFFF;">
@@ -216,27 +307,33 @@
                     </asp:DataList>
                    </marquee>
                 </div>
-                <div class="haberler"></div>
+                <div class="haberler">
+                   
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+                </div>
 
                 <div class="ihaleler">
 
-                     <div style="height:1px;width:200px"></div>
-                    <marquee align="middle" scrollamount="1" height="400px" width="100%" direction="up" scrolldelay="1" onmouseover="this.stop();" onmouseout="this.start();">
+                     <div style=" height:1px; width:200px"></div>
+                    <marquee align="middle" scrollamount="1" height="400px" position: absolute; width="100%" direction="up" scrolldelay="1" onmouseover="this.stop();" onmouseout="this.start();">
                     <asp:DataList ID="DataLIhale" runat="server" Height="398px" >
                         <ItemTemplate>
                             <table class="auto-style8">
                                 <tr>
-                                    <td style=" text-align: left; width: 30px; height: 30px; background-color: #2a595c; background-size:cover; border-left-style: inset; border-left-width: 1px; border-left-color: #2a595c;">
-                                        <%--<asp:Image ID="Image1" runat="server" Height="35px" Width="35px" />--%>
-                                      <img src="sliderResim/Ekran.PNG" style="background-size:cover; width: 30px; height: 30px;" />
+                                    <td style=" text-align:left; width: 30px; height: 30px; background-color: #2a595c; background-size:cover; border-left-style: inset; border-left-width: 1px; border-left-color: #2a595c;">
+                                        
+                                     <img src="sliderResim/Ekran.PNG" style="background-size:cover; width: 30px; height: 30px;" />
                                     </td>
-                                    <td style="text-align: center; background-color: #2a595c; color: #FFFFFF">
+                                    <td style="text-align: center; background-size:cover; color: #FFFFFF; width: 30px; height: 30px; " >
                                         <asp:Literal ID="Literal1" runat="server" Text='<%# Eval("ihaleAdi") %>'></asp:Literal>
                                     </td>
                                 </tr>
                                 <tr style="background-color: #2a595c; text-align: left; color: #FFFFFF">
                                     <td colspan="2" style="text-align: left">
-                                        <asp:Literal ID="Literal2" runat="server" Text='<%# Eval("ihaleOzet") %>'></asp:Literal></td>
+                                      <a href="ihaleDetay.aspx?ihaleID=<%#Eval("ihaleID") %>" style="color:white; text-decoration:none;"> <asp:Literal ID="Literal2" runat="server" Text='<%# Eval("ihaleOzet") %>'></asp:Literal></a>  </td>
                                 </tr>
                                 <tr style="text-align: right; background-color: #2a595c; color: #FFFFFF">
                                     <td colspan="2" style="text-align: right; border-bottom-style: dotted; border-bottom-width: 1px; border-bottom-color: #FFFFFF;">
@@ -258,9 +355,7 @@
         </div>
 
 
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        </asp:ContentPlaceHolder>
-
+        
     </form>
 </body>
 </html>

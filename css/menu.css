@@ -166,7 +166,7 @@ li.birimler {
             -moz-transform: rotateX(-40deg);
         }
 
-        li.hakımizda ul.hakimizdagorunur {
+        li.hakimizda ul.hakimizdagorunur {
             visibility: visible;
             opacity: 1;
         }
@@ -226,6 +226,7 @@ li.birimler {
             visibility: visible;
             opacity: 1;
         }
+         
 
 /*....................mevzuat.............................*/
 

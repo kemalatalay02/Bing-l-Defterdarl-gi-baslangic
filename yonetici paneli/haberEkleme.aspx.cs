@@ -44,7 +44,7 @@ public partial class yonetici_paneli_haberEkleme : System.Web.UI.Page
         if (FileUpFormEkleme.HasFile)
         {
             FileUpFormEkleme.SaveAs(Server.MapPath("/resimler/" + FileUpFormEkleme.FileName));
-            SqlCommand cmdhaberEkle = new SqlCommand("insert into haberTbl(habarAdi,haberOzeti,haberResim,haberIcerik) values('" + TextHEA.Text + "','" + TextHEO.Text + "','/resimler" + FileUpFormEkleme.FileName + "','"+CKid.Text+"')", baglan.baglan());
+            SqlCommand cmdhaberEkle = new SqlCommand("insert into haberTbl(habarAdi,haberOzeti,haberResim,haberIcerik) values('" + TextHEA.Text + "','" + TextHEO.Text + "','/resimler/" + FileUpFormEkleme.FileName + "','"+CKid.Text+"')", baglan.baglan());
             cmdhaberEkle.ExecuteNonQuery();
             Response.Redirect("haberEkleme.aspx");
 

@@ -84,6 +84,8 @@ public partial class AnaMaster : System.Web.UI.MasterPage
     }
     protected void Page_Load(object sender, EventArgs e)
     {
+       
+
         // duyru getirme
         SqlCommand duyru = new SqlCommand("select * from duyruTbl", baglan.baglan());
         SqlDataReader drduyru = duyru.ExecuteReader();
